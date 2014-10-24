@@ -1,0 +1,10 @@
+<div class="container">
+  <form action="/" method="POST">
+   	  Anagrams: <input name="word" type="text" placeholder="Type in a word...">
+	  <input type="submit">
+  </form>
+  <p>Anagrams for "<%= @word %>"</p>
+  <% @list.each do |word| %>
+    <p> <%= word.word %> </p>
+  <% end %>
+</div>
